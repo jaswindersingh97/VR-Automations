@@ -1,0 +1,45 @@
+1. What is an API, and how does it work?
+An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. It defines how requests are made, what responses are expected, and the structure of data exchanged.
+
+How it works:
+The client (frontend) makes a request to the API.
+The server processes the request, resolving the query by interacting with a database .
+The API sends back a response in a structured format.
+
+2. What are client secret keys and authentication keys, and how are they used in APIs?
+Client Secret Key – A confidential key used in OAuth-based authentication to verify the identity of an application. It should never be exposed publicly.
+Authentication Key – A key used to verify the identity of a user or system making an API request.
+Usage in APIs:
+
+These keys are sent in API requests (e.g., in headers) to authenticate the caller.
+
+3. What are HTTP methods, and how are they used in API requests?
+HTTP methods define the type of action performed on a resource in an API request:
+
+GET – Retrieve data .
+POST – Create a new resource .
+PUT – Update an existing resource .
+PATCH – Partially update a resource.
+DELETE – Remove a resource.
+
+4. What is the purpose of API authentication, and what are common authentication methods?
+Purpose: API authentication ensures that only authorized users can access protected resources, preventing unauthorized access.
+
+Common authentication methods:
+
+API Keys – A simple unique key used for authentication.
+OAuth 2.0 – A token-based authentication system (e.g., used by Google and Facebook logins).
+JWT (JSON Web Token) – A compact, self-contained token used to securely transmit information.
+Basic Authentication – Uses a username and password encoded in Base64 (not very secure).
+Bearer Tokens – A token (often from OAuth or JWT) sent in the authorization header.
+
+5. What is an API key, and how is it used?
+An API key is a unique identifier used to authenticate and authorize API requests. It is usually included in:
+
+The headers (Authorization: Bearer <API_KEY>)
+
+Usage:
+
+Identifies the client making the request.
+Limits API access based on permissions.
+Helps track API usage and prevent abuse.
